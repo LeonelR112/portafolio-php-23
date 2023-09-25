@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Flex:opsz@8..144&display=swap');
+
+:root{
+    --font-roboto : 'Roboto Condensed', sans-serif;
+    --bg-main-page: rgba(0, 0, 0, 0.6);
+    --color-main-blue: rgb(0, 107, 179);
+    --color-main-white: rgb(233, 233, 233);
+}
+
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./../assets/img/bg-moutains.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+main{
+   padding-top: 5rem;
+   min-height: 95vh;
+}
+
+footer{
+    padding: 1.2rem;
+    border-top: 1px solid whitesmoke;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: var(--bg-main-page);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.link-logo{
+    font-size: 19px;
+    color: white;
+    text-shadow: 1px 1px 3px rgb(34, 34, 34);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.font-roboto{
+    font-family: var(--font-roboto);
+}
+
+.main-navbar{
+    padding: 1.2rem;
+    border-bottom: 1px solid whitesmoke;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: var(--bg-main-page);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#main_container{
+    max-height: 90vh;
+}
+
+#tply-source {
+    display: none; 
+}
+/* card windows */
+
+.card-window-header{
+    background: rgb(161,161,161);
+    background: linear-gradient(0deg, rgba(161,161,161,1) 0%, rgba(247,247,247,1) 100%); 
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 25px;
+    z-index: 3;
+}
+
+.card-window-body{
+    background-color: rgba(245, 245, 245, 0.8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 15px;
+    margin-bottom: 0.7rem;
+    z-index: 3;
+}
+
+/* navbar aside*/
+.text-nav-aside{
+    display: none;
+}
+
+.link-nav-aside:hover .text-nav-aside{
+    display: block;
+}
+
+.menu-selector-content{
+    max-width:80px;
+    /*
+    background: var(--bg-main-page);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    */
+}
+
+/* icons */
+.globe-icon{
+    transform: rotateZ(20deg);
+}
+/* fin icons */
+
+.main_title_home{
+    font-weight: bold;
+    font-size: 54px;
+    text-align: center;
+    text-shadow: 1px 2px 2px black;
+}
+
+.text-stack-title-home{
+    font-weight: bold;
+    font-size: 54px;
+    text-align: center;
+    color: var(--color-main-white);
+    text-shadow: 1px 2px 2px black;
+    font-style: italic;
+}
+
+.icon-language{
+    transition: transform ease-in-out 150ms;
+}
+
+.icon-language:hover{
+    transform: scale(1.3);
+}
+
+/* textos */
+.title-p{
+    font-size: 25px;
+    font-weight: 800;
+}
