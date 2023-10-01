@@ -1,10 +1,17 @@
 <nav class="main-navbar">
-    <section class="row justify-content-center m-0">
-        <div class="col-11 col-md-8 col-lg-3 text-center">
-            <a href="#" class="link-logo">L/R</a>
+    <div class="container">
+        <div class="row m-0 justify-content-center">
+            <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center p-0">
+                <a href="#"><img src="{{assets('img/logo-lrweb.png')}}" width="170px" alt=""></a>
+            </div>
+            <div class="col-12 col-lg-9 p-0 h-100">
+                <div class="content-navbar-link d-flex justify-content-end align-items-center">
+                    <a href="#" class="navbar-link">INICO</a>
+                    <a href="#" class="navbar-link">SOBRE MÍ</a>
+                    <a href="#" class="navbar-link">PORTAFOLIO</a>
+                    <a href="#" class="navbar-link">CONTACTO</a>
+                </div>
+            </div>
         </div>
-        <div class="col-1 col-md-4 col-lg-9 text-end text-light">
-            
-        </div>
-    </section>
+    </div>
 </nav>
