@@ -1,4 +1,4 @@
-<nav class="main-navbar">
+<nav class="main-navbar" id="main_navbar">
     <div class="container">
         <div class="row m-0 justify-content-center">
             <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center p-0">
