@@ -96,6 +96,7 @@
     text-decoration: none;
     transition: background ease-in-out 150ms;
     margin: 10px;
+    background:none;
 }
 
 .button-lr:hover{
@@ -165,4 +166,42 @@
 
 .section-about{
     background-color: var(--main-grey-2)
+}
+
+.section-portfolio{
+    background-color: var(--main-grey-1);
+}
+
+.card-proyect{
+    border: 2px solid var(--main-gold);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 380px;
+    transition: transform ease-in-out 250ms;
+}
+
+.card-proyect:hover{
+    transform: translateY(-15px);
+}
+
+.hover-card-selected{
+    position: absolute;
+    z-index: 5px;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all ease-in-out 550ms;
+    opacity: 0.5;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.card-proyect:hover .hover-card-selected{
+    transform: scale(1);
+    opacity: 0.7;
 }
