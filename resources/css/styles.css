@@ -1,8 +1,11 @@
 :root{
     --main-gold: #FFCB00;  
+    --main-yellow: #FFCB00;  
     --main-white: #f7f7f7;  
     --main-grey-1: #131313;
     --main-grey-2: #353535;
+    --main-lightgrey-1: #b6b6b6;
+    --main-lightgrey-2: #e7e7e7;
 }
 
 *{
@@ -176,8 +179,6 @@
     border: 2px solid var(--main-gold);
     position: relative;
     overflow: hidden;
-    width: 100%;
-    min-height: 380px;
     transition: transform ease-in-out 250ms;
 }
 
@@ -204,4 +205,54 @@
 .card-proyect:hover .hover-card-selected{
     transform: scale(1);
     opacity: 0.7;
+}
+
+.hover-card-title{
+    font-size: 28px;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.hover-card-subtitle{
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+
+.hover-card-button{
+    display: block;
+    text-decoration: none;
+    color: var(--main-gold);
+    transition: color ease-in-out 250ms;
+}
+
+.hover-card-button:hover{
+    color: var(--main-grey-2);
+}
+
+.section-contacto{
+    background: var(--main-grey-2);
+}
+
+/* formularios */
+::placeholder {
+    color: var(--main-lightgrey-2);
+    opacity: 1; /* Firefox */
+}
+  
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: var(--main-lightgrey-2);
+}
+
+.input-form-control{
+    box-shadow: none;
+    background-color: var(--main-lightgrey-1);
+    border: none;
+    font-size: 17px;
+    border-radius: 7px;
+    width: 100%;
+    padding: 10px;
 }

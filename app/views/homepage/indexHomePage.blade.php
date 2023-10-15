@@ -23,7 +23,7 @@
 
     <section class="section-services bg-grey-1 text-light py-5 shadow-top-effect position-relative">
         <div class="separator-effect-1"></div>
-        <article class="container">
+        <article class="container pb-5">
             <div class="row m-0 gy-3 justify-content-center">
                 <div class="col-12">
                     <p class="title-section-1">Qué servicios ofrezco</p>
@@ -242,11 +242,53 @@
             </div>
             <section class="row m-0">
                 <div class="col-6 col-md-4 col-lg-4">
-                    <div class="card-proyect">
-                        <div class="hover-card-selected"></div>
+                    <div class="card-proyect ratio ratio-1x1">
+                        <div class="hover-card-selected">
+                            <p class="hover-card-title">Mi sitio web</p>
+                            <p class="hover-card-subtitle">Plantilla web</p>
+                            <a href="#" class="hover-card-button">Ver proyecto</a>
+                        </div>
                     </div>
                 </div>
             </section>
+        </article>
+    </section>
+
+    <section class="section-contacto position-relative py-5 text-light">
+        <article class="container">
+            <p class="title-section-1 mt-5">CONTACTO</p>
+            <div class="row m-0">
+                <div class="col-12 col-lg-6">
+                    <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non nesciunt earum laudantium dolore minus excepturi perferendis eum delectus iusto aut.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <form action="#" method="POST">
+                        <div class="row g-3 m-0">
+                            <div class="col-12 col-md-6">
+                                <input type="text" name="nombre" id="input_nombre" class="input-form-control" placeholder="Nombre *">
+                                <div class="input-invalid" id="invalidNombre"></div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="email" name="email" id="input_mail" class="input-form-control" placeholder="Email *">
+                                <div class="input-invalid" id="invalidEmail"></div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" name="telefono" id="input_telefono" class="input-form-control" placeholder="Teléfono">
+                                <div class="input-invalid" id="invalidTelefono"></div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" name="sitioWeb" id="input_web" class="input-form-control" placeholder="Sitio web">
+                                <div class="input-invalid" id="invalidSitioWeb"></div>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="mensaje" id="input_mensaje" cols="30" rows="5" class="input-form-control" placeholder="Mensaje"></textarea>
+                                <p class="text-end"><span class="text-counter-msg">0 </span>/ 250</p>
+                                <div class="input-invalid" id="invalidMensaje"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </article>
     </section>
 @endsection
