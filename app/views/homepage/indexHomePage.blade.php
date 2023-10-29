@@ -6,7 +6,7 @@
         <div class="row justify-content-center m-0">
             <div class="col-12 col-lg-5">
                 <div class="content-descrip-home">
-                    <p class="display-4 fw-bold mb-0">Hi' I'm Sen Maxuale</p>
+                    <p class="display-4 fw-bold mb-0">Hola soy Leonel Ruiz</p>
                     <p class="display-5">Desarrollador web Full-Stack</p>
                     <p class="text-description-home">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officia quis corrupti tempore ex ipsum quas in? Rem aliquid quibusdam alias, numquam impedit officia mollitia vel excepturi consectetur a minus!</p>
                     <div class="w-100 justify-content-center-align-items-center flex-wrap">
@@ -73,157 +73,72 @@
                     <h5 class="text-start">Lenguajes de programación</h5>
                     <div class="row m-0 g-2">
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/html5.png')}}" width="40px" alt="HTML5">
+                            <a href="javascript:void(0)" class="" title="Más info" onclick="$('#modalInfoLenguajes').modal('show')"><img src="{{assets('icons/html5.png')}}"  class="language-more-info-link" width="40px" alt="HTML5"></a>
                             <p class="m-0 small">HTML5</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 75%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/css3.png')}}" width="40px" alt="CSS3">
                             <p class="m-0 small">CSS3</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 75%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/javascript.png')}}" width="40px" alt="JAVASCRIPT">
                             <p class="m-0 small">JAVASCRIPT</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 65%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/php.png')}}" width="50px" alt="PHP">
                             <p class="m-0 small">PHP</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 65%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/mysql.png')}}" width="50px" alt="MYSQL">
                             <p class="m-0 small">MYSQL</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 65%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/jquery.png')}}" width="50px" alt="JQUERY">
                             <p class="m-0 small">JQUERY</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 45%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/bootstrap.png')}}" width="40px" alt="BOOTSTRAP">
                             <p class="m-0 small">BOOTSTRAP</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 45%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/git-noname.png')}}" width="40px" alt="GIT">
                             <p class="m-0 small">GIT</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 38%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/laravel.png')}}" width="40px" alt="LARAVEL">
                             <p class="m-0 small">LARAVEL</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 28%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/angular.png')}}" width="40px" alt="ANGULAR">
                             <p class="m-0 small">ANGULAR</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 25%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/reactjs.png')}}" width="40px" alt="REACTJS">
                             <p class="m-0 small">REACT JS</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 18%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/nodejs.png')}}" width="40px" alt="NODEJS">
                             <p class="m-0 small">NODE JS</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 18%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/electronjs.png')}}" width="40px" alt="ELECTRONJS">
                             <p class="m-0 small">ELECTRON JS</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 18%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/mongodb.png')}}" width="40px" alt="MONGODB">
                             <p class="m-0 small">MONGODB</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 7%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/vuejs.png')}}" width="40px" alt="VUEJS">
                             <p class="m-0 small">VUE JS</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 7%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/python.png')}}" width="40px" alt="PYTHON">
                             <p class="m-0 small">PYTHON</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 11%"></div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <img src="{{assets('icons/golang.png')}}" width="40px" alt="GO">
                             <p class="m-0 small">GO LANG</p>
-                            <div class="w-100">
-                                <div class="progress" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar bg-gold" style="width: 5%"></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -291,4 +206,37 @@
             </div>
         </article>
     </section>
+
+    <!-- Modal info lenguajes-->
+    <div class="modal fade slide-in-right" id="modalInfoLenguajes" tabindex="-1" aria-labelledby="modalInfoLenguajesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content section-portfolio text-light">
+                <div class="modal-body">
+                    <section class="row m-0 overflow-hidden">
+                        <div class="col-12">
+                            <h5 class="text-center text-light">Más información</h5>
+                            <hr class="border border-light">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center flex-column">
+                            <img src="{{assets('icons/html5.png')}}" class="img-fluid scale-in-center" style="max-width:128px" alt="HTML5">
+                            <h5 class="text-center text-light">HTML5</h5>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8 d-flex justify-content-center align-items-center slide-in-elliptic-top-fwd">
+                            foto diploma
+                        </div>
+                        <div class="col-12 puff-in-center">
+                            descripción. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iure, omnis praesentium sunt illum porro quidem blanditiis nisi dolorem modi pariatur fugiat quisquam, quae quibusdam, quos doloribus odio. Expedita, ab.
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button-lr" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+
+    </script>
 @endsection

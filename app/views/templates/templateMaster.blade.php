@@ -12,6 +12,7 @@
     {!! cssFile('animations', false) !!}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     {!! jsFile('jquery-3.7.1') !!}
+    @include("layouts.globalConfigjs")
 </head>
 <body>
     @include('layouts.navbar')
