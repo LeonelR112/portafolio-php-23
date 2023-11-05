@@ -107,6 +107,23 @@
     color: var(--main-white);
 }
 
+.button-lr-sroll-up{
+    border: 2px solid var(--main-lightgrey-1);
+    background: var(--main-gold);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background ease-in-out 150ms;
+    margin: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 15;
+    padding: 12px;
+    border-radius: 8px;
+    display: none;
+}
+
 .shadow-top-effect{
     box-shadow: 1px -16px 45px -16px rgba(19,34,36,0.75);
     -webkit-box-shadow: 1px -16px 45px -16px rgba(19,34,36,0.75);
@@ -189,7 +206,7 @@
 .hover-card-selected{
     position: absolute;
     z-index: 5px;
-    background-color: aliceblue;
+    background-color: rgb(22, 22, 22);
     width: 100%;
     height: 100%;
     display: flex;
@@ -213,6 +230,7 @@
     width: 100%;
     margin-bottom: 0px;
     text-align: center;
+    color: white;
 }
 
 .hover-card-subtitle{
@@ -220,6 +238,7 @@
     text-align: center;
     width: 100%;
     font-weight: 600;
+    color: rgb(206, 206, 206);
 }
 
 .hover-card-button{
@@ -279,4 +298,9 @@
 
 .language-more-info-link:hover{
     transform: scale(1.5);
+}
+
+.backgrounds-cards{
+    background-size: cover;
+    background-position: center;
 }

@@ -2,7 +2,7 @@
 @section('title', 'Inicio')
 @section('meta-desc', 'Descripción de la sección que se está visualizando')
 @section('content')
-    <section class="section-home bg-banner-init">
+    <section class="section-home bg-banner-init"  id="inicio">
         <div class="row justify-content-center m-0">
             <div class="col-12 col-lg-5">
                 <div class="content-descrip-home">
@@ -10,8 +10,8 @@
                     <p class="display-5">Desarrollador web Full-Stack</p>
                     <p class="text-description-home">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officia quis corrupti tempore ex ipsum quas in? Rem aliquid quibusdam alias, numquam impedit officia mollitia vel excepturi consectetur a minus!</p>
                     <div class="w-100 justify-content-center-align-items-center flex-wrap">
-                        <a href="#" class="button-lr">Portafolio</a>
-                        <a href="#" class="button-lr">Contacto</a>
+                        <button type="button" class="button-lr" onclick="scrollToElement('portafolio')">Portafolio</a>
+                        <button type="button" class="button-lr" onclick="scrollToElement('contacto')">Contacto</button>
                     </div>
                 </div>
             </div>
@@ -145,8 +145,7 @@
             </div>
         </article>
     </section>
-
-    <section class="section-portfolio position-relative py-5">
+    <section class="section-portfolio position-relative py-5" id="portafolio">
         <div class="separator-effect-2" style="top:-35px;transform: skewY(-1.5deg);"></div>
         <article class="container">
             <p class="title-section-1 mt-5">PORTAFOLIO</p>
@@ -157,7 +156,7 @@
             </div>
             <section class="row m-0">
                 <div class="col-6 col-md-4 col-lg-4">
-                    <div class="card-proyect ratio ratio-1x1">
+                    <div class="card-proyect ratio ratio-1x1 backgrounds-cards" style="background-image: url('{{assets('img/example_1.jpg')}}')">
                         <div class="hover-card-selected">
                             <p class="hover-card-title">Mi sitio web</p>
                             <p class="hover-card-subtitle">Plantilla web</p>
@@ -170,7 +169,7 @@
     </section>
 
     <section class="section-contacto position-relative py-5 text-light">
-        <article class="container">
+        <article class="container" id="contacto">
             <p class="title-section-1 mt-5">CONTACTO</p>
             <div class="row m-0">
                 <div class="col-12 col-lg-6">
@@ -178,7 +177,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <form action="#" method="POST">
-                        <div class="row g-3 m-0">
+                        <div class="row g-2 m-0">
                             <div class="col-12 col-md-6">
                                 <input type="text" name="nombre" id="input_nombre" class="input-form-control" placeholder="Nombre *">
                                 <div class="input-invalid" id="invalidNombre"></div>
@@ -195,10 +194,13 @@
                                 <input type="text" name="sitioWeb" id="input_web" class="input-form-control" placeholder="Sitio web">
                                 <div class="input-invalid" id="invalidSitioWeb"></div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 mb-0">
                                 <textarea name="mensaje" id="input_mensaje" cols="30" rows="5" class="input-form-control" placeholder="Mensaje"></textarea>
                                 <p class="text-end"><span class="text-counter-msg">0 </span>/ 250</p>
                                 <div class="input-invalid" id="invalidMensaje"></div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" title="Enviar mensaje" class="button-lr px-5">Enviar mensaje</button>
                             </div>
                         </div>
                     </form>
@@ -236,7 +238,5 @@
         </div>
     </div>
     
-    <script>
-
-    </script>
+    <button type="button" class="button-lr-sroll-up slide-in-right" id="button_scroll_index" onclick="scrollToElement('inicio')"><i class="bi bi-arrow-up"></i></button>
 @endsection
