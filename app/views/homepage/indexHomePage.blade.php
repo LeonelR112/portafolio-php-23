@@ -22,7 +22,6 @@
     </section>
 
     <section class="section-services bg-grey-1 text-light py-5 shadow-top-effect position-relative">
-        <div class="separator-effect-1"></div>
         <article class="container pb-5">
             <div class="row m-0 gy-3 justify-content-center">
                 <div class="col-12">
@@ -52,7 +51,6 @@
                 </div>
             </div>
         </article>
-        <div class="separator-effect-2"></div>
     </section>
 
     <section class="section-about text-light py-5">
@@ -72,81 +70,18 @@
                 <div class="col-12 border p-2 mb-5">
                     <h5 class="text-start">Lenguajes de programación</h5>
                     <div class="row m-0 g-2">
+                        @foreach($languages_prog as $lang)
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <a href="javascript:void(0)" class="" title="Más info" onclick="$('#modalInfoLenguajes').modal('show')"><img src="{{assets('icons/html5.png')}}"  class="language-more-info-link" width="40px" alt="HTML5"></a>
-                            <p class="m-0 small">HTML5</p>
+                            <a href="javascript:void(0)" class="" title="Más info" onclick="$('#modalInfoLenguajes').modal('show')"><img src="{{assets('icons/' . $lang["icon_img"])}}"  class="language-more-info-link" width="40px" alt="{{$lang['name']}}"></a>
+                            <p class="m-0 small">{{$lang['name']}}</p>
                         </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/css3.png')}}" width="40px" alt="CSS3">
-                            <p class="m-0 small">CSS3</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/javascript.png')}}" width="40px" alt="JAVASCRIPT">
-                            <p class="m-0 small">JAVASCRIPT</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/php.png')}}" width="50px" alt="PHP">
-                            <p class="m-0 small">PHP</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/mysql.png')}}" width="50px" alt="MYSQL">
-                            <p class="m-0 small">MYSQL</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/jquery.png')}}" width="50px" alt="JQUERY">
-                            <p class="m-0 small">JQUERY</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/bootstrap.png')}}" width="40px" alt="BOOTSTRAP">
-                            <p class="m-0 small">BOOTSTRAP</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/git-noname.png')}}" width="40px" alt="GIT">
-                            <p class="m-0 small">GIT</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/laravel.png')}}" width="40px" alt="LARAVEL">
-                            <p class="m-0 small">LARAVEL</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/angular.png')}}" width="40px" alt="ANGULAR">
-                            <p class="m-0 small">ANGULAR</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/reactjs.png')}}" width="40px" alt="REACTJS">
-                            <p class="m-0 small">REACT JS</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/nodejs.png')}}" width="40px" alt="NODEJS">
-                            <p class="m-0 small">NODE JS</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/electronjs.png')}}" width="40px" alt="ELECTRONJS">
-                            <p class="m-0 small">ELECTRON JS</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/mongodb.png')}}" width="40px" alt="MONGODB">
-                            <p class="m-0 small">MONGODB</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/vuejs.png')}}" width="40px" alt="VUEJS">
-                            <p class="m-0 small">VUE JS</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/python.png')}}" width="40px" alt="PYTHON">
-                            <p class="m-0 small">PYTHON</p>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <img src="{{assets('icons/golang.png')}}" width="40px" alt="GO">
-                            <p class="m-0 small">GO LANG</p>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </article>
     </section>
     <section class="section-portfolio position-relative py-5" id="portafolio">
-        <div class="separator-effect-2" style="top:-35px;transform: skewY(-1.5deg);"></div>
         <article class="container">
             <p class="title-section-1 mt-5">PORTAFOLIO</p>
             <div class="d-flex justify-content-center align-items-center flex-wrap mb-5">
@@ -239,4 +174,9 @@
     </div>
     
     <button type="button" class="button-lr-sroll-up slide-in-right" id="button_scroll_index" onclick="scrollToElement('inicio')"><i class="bi bi-arrow-up"></i></button>
+@endsection
+@section('scripts-footer')
+<script>
+    const JSON_LANGUAGES = {!! $json_languages !!};
+</script>
 @endsection
