@@ -1,5 +1,5 @@
 @extends('templates.templateMaster')
-@section('title', 'Inicio')
+@section('title', 'LR - Inicio')
 @section('meta-desc', 'Descripción de la sección que se está visualizando')
 @section('content')
     <section class="section-home bg-banner-init"  id="inicio">
@@ -72,7 +72,7 @@
                     <div class="row m-0 g-2">
                         @foreach($languages_prog as $lang)
                         <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
-                            <a href="javascript:void(0)" class="" title="Más info" onclick="$('#modalInfoLenguajes').modal('show')"><img src="{{assets('icons/' . $lang["icon_img"])}}"  class="language-more-info-link" width="40px" alt="{{$lang['name']}}"></a>
+                            <a href="javascript:void(0)" class="button_more_details_lang" data-id-lang="{{$lang['id_lang']}}" title="Más info" onclick="$('#modalInfoLenguajes').modal('show')"><img src="{{assets('icons/' . $lang["icon_img"])}}"  class="language-more-info-link" width="40px" alt="{{$lang['name']}}"></a>
                             <p class="m-0 small">{{$lang['name']}}</p>
                         </div>
                         @endforeach
@@ -155,13 +155,11 @@
                             <hr class="border border-light">
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center flex-column">
-                            <img src="{{assets('icons/html5.png')}}" class="img-fluid scale-in-center" style="max-width:128px" alt="HTML5">
-                            <h5 class="text-center text-light">HTML5</h5>
+                            <img src="#" class="img-fluid scale-in-center display-1" alt="" id="img_icon_lang">
+                            <h3 class="text-center text-light" id="modal_title_lang">HTML5</h3>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-8 d-flex justify-content-center align-items-center slide-in-elliptic-top-fwd">
-                            foto diploma
-                        </div>
-                        <div class="col-12 puff-in-center">
+                        <div class="col-12 col-md-6 col-lg-8 d-flex justify-content-center align-items-center slide-in-elliptic-top-fwd" id="content_certificate"></div>
+                        <div class="col-12 puff-in-center" id="content_descrip_lang">
                             descripción. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iure, omnis praesentium sunt illum porro quidem blanditiis nisi dolorem modi pariatur fugiat quisquam, quae quibusdam, quos doloribus odio. Expedita, ab.
                         </div>
                     </section>
@@ -178,5 +176,8 @@
 @section('scripts-footer')
 <script>
     const JSON_LANGUAGES = {!! $json_languages !!};
+    const URL_ASSETS_ICONS = `{{ assets('icons/') }}`;
+    const URL_ASSETS_IMG = `{{ assets('img/') }}`
 </script>
+{!! jsFile('funcionts\homepage', false) !!}
 @endsection
