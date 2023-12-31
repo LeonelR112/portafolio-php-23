@@ -1,5 +1,5 @@
 @extends('templates.templateMaster')
-@section('title', 'LR - Inicio')
+@section('title', 'LRWEB - Inicio')
 @section('meta-desc', 'Descripción de la sección que se está visualizando')
 @section('content')
     <section class="section-home bg-banner-init"  id="inicio">
