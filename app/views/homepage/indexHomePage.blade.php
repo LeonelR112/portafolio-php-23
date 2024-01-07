@@ -6,9 +6,11 @@
         <div class="row justify-content-center m-0">
             <div class="col-12 col-lg-5">
                 <div class="content-descrip-home">
-                    <p class="display-4 fw-bold mb-0">Hola soy Leonel Ruiz</p>
-                    <p class="display-5">Desarrollador web Full-Stack</p>
-                    <p class="text-description-home">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officia quis corrupti tempore ex ipsum quas in? Rem aliquid quibusdam alias, numquam impedit officia mollitia vel excepturi consectetur a minus!</p>
+                    <p class="display-4 fw-bold mb-0"><span class="text-gold">L</span>eonel <span class="text-gold">R</span>uiz</p>
+                    <p class="display-5 mb-0"><span class="display-6 fw-bold">Desarrollador web <span class="text-gold">Full-Stack</span></p>
+                    <p class="text-description-home">
+                        Te doy la bienvenida a mi portafolio virutal. Soy programador de aplicaciones web trabajando tanto en el Frontend como en el backend con 3 años de experiencia en este campo.
+                    </p>
                     <div class="w-100 justify-content-center-align-items-center flex-wrap">
                         <button type="button" class="button-lr" onclick="scrollToElement('portafolio')">Portafolio</a>
                         <button type="button" class="button-lr" onclick="scrollToElement('contacto')">Contacto</button>
@@ -34,7 +36,9 @@
                                 <div class="card-body d-justify-content-center align-items-center flex-column">
                                     <p class="icon-info mb-0"><i class="bi bi-window-stack"></i></p>
                                     <p class="text-card">Applicaciones Web</p>
-                                    <p class="text-descript-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error optio itaque soluta excepturi dolorem dicta in esse eaque animi perspiciatis, cupiditate ut, quos nesciunt voluptatum eligendi ipsum molestiae at eos.</p>
+                                    <p class="text-descript-card">
+                                        Creación de carritos virtuales y sus catálogos el cual pueden ser administrados. Plataformas de cursos en líneas con posibilidad de descarga de materiales también administrables, sistemas de mensajería con envíos de emails y plantillas, plataformas de administración de datos para diferentes tipos de usuarios según su categoría, entre otros desarrollos.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -42,8 +46,10 @@
                             <div class="card bg-dark text-light card-info-portfolio">
                                 <div class="card-body d-justify-content-center align-items-center flex-column">
                                     <p class="icon-info mb-0"><i class="bi bi-layout-text-window-reverse"></i></p>
-                                    <p class="text-card">Diseños de sitios Web</p>
-                                    <p class="text-descript-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error optio itaque soluta excepturi dolorem dicta in esse eaque animi perspiciatis, cupiditate ut, quos nesciunt voluptatum eligendi ipsum molestiae at eos.</p>
+                                    <p class="text-card">Diseños y maquetado de sitios Web</p>
+                                    <p class="text-descript-card">
+                                        Trabajando con el frontend de las páginas web maquetando el diseño deseado, organizando la estructura, colores, imágenes, etc. Como por ejemplo landings pages, agregando las funcionalidades correspondientes a botones, formularios y validaciones. Con diseños responsivo y adaptable a las pantallas como smartphones, tablets y Pc de escritorio.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -63,21 +69,63 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-9 col-xxl-8 border p-2">
-                    <p class="text-center display-5 fw-bold mb-0 fst-italic"><span class="text-gold">L</span>eonel <span class="text-gold">R</span>uiz <br> <span class="display-6 fw-bold">Desarrollador web <span class="text-gold">Full-Stack</span></span></p>
-                    <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officia quis corrupti tempore ex ipsum quas in? Rem aliquid quibusdam alias, numquam impedit officia mollitia vel excepturi consectetur a minus!</p>
-                    <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum officia quis corrupti tempore ex ipsum quas in? Rem aliquid quibusdam alias, numquam impedit officia mollitia vel excepturi consectetur a minus!</p>
+                    <h5 class="text-center"><i class="bi bi-info-circle"></i> Info</h5>
+                    <p class="text-light">Soy una persona que es apasionada por la tecnología e informática desde hace más de 15 años. LLegué a realizar cursos de capacitación tanto para el mantenimiento de hardware de computadoras como en administración de software llegando al mundo de la programación.</p>
+                    <p class="text-light mb-3">Realicé una formación de 14 meses para desarrollador web full stack con PHP en el instituto <strong><a href="https://www.educacionit.com/" target="_blank">Educación IT</a></strong> finalizando los estudios en el año 2021 y así después obtuve mi primer empleo en una empresa.</p>
+                   
+                    <h5 class="text-center"><i class="bi bi-journal-text"></i> Experiencia</h5>
+                    <p class="text-light"><strong>Prodermic</strong> - Dev Full stack web (3 años): encargado en el desarrollo de los proyectos solicidatos por la empresa.</p>
                 </div>
-                <div class="col-12 border p-2 mb-5">
-                    <h5 class="text-start">Lenguajes de programación</h5>
+                <div class="col-12 p-2 mb-5">
+                    <h5 class="text-start"><i class="bi bi-code-slash"></i> Lenguajes de programación</h5>
                     <div class="row m-0 g-2">
                         @foreach($languages_prog as $lang)
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-1 col-xxl-1 mb-3 d-flex justify-content-end align-items-center flex-column">
                             <a href="javascript:void(0)" class="button_more_details_lang" data-id-lang="{{$lang['id_lang']}}" title="Más info" onclick="$('#modalInfoLenguajes').modal('show')"><img src="{{assets('icons/' . $lang["icon_img"])}}"  class="language-more-info-link" width="40px" alt="{{$lang['name']}}"></a>
                             <p class="m-0 small">{{$lang['name']}}</p>
                         </div>
                         @endforeach
                     </div>
                 </div>
+                @if(count($complementos_dev) > 0)
+                <div class="col-12 col-lg-6">
+                    <h5 class="text-center"><i class="bi bi-flag"></i> Otros complementos en desarrollo web</h5>
+                    <section class="row m-0 g-2 justify-content-center">
+                        @foreach($complementos_dev as $complemento)
+                        <div class="col-6 col-sm-4 col-md-3 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-start align-items-center flex-column h-100">
+                                        <a href="javascript:void(0)" class="button_more_details_comdev stretched-link" data-id-comdev="{{$complemento['id_comdev']}}" title="Más info" onclick="$('#modalInfoLenguajes').modal('show')"><img src="{{assets('icons/' . $complemento["imagen"])}}"  class="language-more-info-link" width="40px" alt="{{$complemento['titulo']}}"></a>
+                                        <p class="m-0 small text-center">{{mb_strtoupper($complemento['titulo'])}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </section>
+                </div>
+                @endif
+                @if(count($otros_conocimientos) > 0)
+                <div class="col-12 col-lg-6">
+                    <h5 class="text-center"><i class="bi bi-tools"></i> Otros conocimientos</h5>
+                    <section class="row m-0 g-3 justify-content-center">
+                        @foreach($otros_conocimientos as $conocimiento)
+                        <div class="col-12 col-sm-6 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body bg-dark text-white">
+                                    <div class="d-flex justify-content-end align-items-center flex-column h-100">
+                                        <img src="{{assets('img/' . $conocimiento['imagen'])}}" alt="img_not_found" style="width:auto;max-width:70px">
+                                        <p class="fs-5 text-center">{{$conocimiento['titulo']}}</p>
+                                        <p class="text-center small text-white">{{$conocimiento['descripcion']}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </section>
+                </div>
+                @endif
             </div>
         </article>
     </section>
@@ -90,15 +138,27 @@
                 <button type="button" href="#" class="button-lr d-block button-filter-proyects">App web</button>
             </div>
             <section class="row m-0">
-                <div class="col-6 col-md-4 col-lg-4">
-                    <div class="card-proyect ratio ratio-1x1 backgrounds-cards" style="background-image: url('{{assets('img/example_1.jpg')}}')">
-                        <div class="hover-card-selected">
-                            <p class="hover-card-title">Mi sitio web</p>
-                            <p class="hover-card-subtitle">Plantilla web</p>
-                            <a href="#" class="hover-card-button">Ver proyecto</a>
+                @if(count($proyectos) > 0)
+                    @foreach($proyectos as $proyecto)
+                        <div class="col-6 col-md-4 col-lg-4">
+                            <div class="card-proyect ratio ratio-1x1 backgrounds-cards" style="background-image: url('{{assets('img/projects/' . $proyecto['imagen'])}}')">
+                                <div class="hover-card-selected">
+                                    <p class="hover-card-title">{{$proyecto['titulo']}}</p>
+                                    <p class="hover-card-subtitle">{!! $proyecto['tipo'] == 'P' ? '<span class="badge bg-warning">Plantilla WEB</span>' : '<span class="badge bg-primary">Aplicación WEB</span>' !!}</p>
+                                    @if($proyecto['privada'] == 'S')
+
+                                    @else
+                                        <a href="{{$proyecto['url_proyecto']}}" class="hover-card-button" target="_blank" title="Ver proyecto">Ver proyecto</a>
+                                    @endif
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    @endforeach
+                @else
+                <div class="col-12">
+                    <p class="text-center text-muted small">No se han encontrado proyectos</p>
                 </div>
+                @endif
             </section>
         </article>
     </section>
@@ -176,6 +236,8 @@
 @section('scripts-footer')
 <script>
     const JSON_LANGUAGES = {!! $json_languages !!};
+    const JSON_PROYECTOS = {!! $json_proyectos !!};
+    const JSON_COMPLEMENTOS_DEV = {!! $json_complementos_dev !!};
     const URL_ASSETS_ICONS = `{{ assets('icons/') }}`;
     const URL_ASSETS_IMG = `{{ assets('img/') }}`
 </script>
